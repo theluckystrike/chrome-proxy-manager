@@ -1,0 +1,38 @@
+{
+    "name": "chrome-proxy-manager",
+    "version": "0.1.0",
+    "description": "Chrome Proxy API wrapper — configure proxies, PAC scripts, proxy rules, bypass lists, and proxy profiles for MV3 extensions.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "proxy",
+        "chrome-proxy",
+        "pac-script",
+        "proxy-settings",
+        "manifest-v3",
+        "browser-extension",
+        "vpn",
+        "network"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-proxy-manager.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
